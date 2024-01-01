@@ -1,1 +1,1 @@
-A project where performing crud operations on a mongo databasae using expressjs. 
+A project where performing crud operations on a mongo database using expressjs. 

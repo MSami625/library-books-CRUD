@@ -1,0 +1,30 @@
+<h1>Books</h1>
+
+ <div>
+    <form action="/books/create">
+      <button>
+        Add a New Book
+      </button>
+      </form>
+  </div>
+
+  <hr>
+
+{{#each books}}
+
+ 
+
+  <div style="background-color: rgb(235, 235, 235); padding:10px; margin-top:10px;">
+    <h3>
+      {{title}}
+    </h3>
+    <p>By: {{author}}</p>
+    <a style="color:blue;" href="/books/{{_id}}">See details</a>
+    <a href="/books/{{_id}}/edit">Edit</a>
+
+    <form style="margin-top: 5px;" action="/books/{{_id}}/delete" method="POST">
+      <button>Delete Book</button>
+    </form>
+
+  </div>
+{{/each}}
